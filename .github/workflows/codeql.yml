@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL Advanced"
+name: "Dorny Path Filter Test"
 
 on:
   pull_request:
@@ -34,6 +34,7 @@ jobs:
         filters: |
           src:
             - '"**/*.py"'
+            - '"**/*.yml"'
 
     - name: Debug filter result
       run: echo "${result}"
