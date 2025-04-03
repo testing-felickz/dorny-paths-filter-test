@@ -33,7 +33,7 @@ jobs:
       with:
         filters: |
           src:
-            - '"**/*.{py}"'
+            - '"**/*.py"'
 
     - name: Debug filter result
       run: echo "${result}"
